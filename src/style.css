@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #252932;
+    color: beige;
+}
+
+.icon_help{
+    padding: 10px;
+}
+
+.icon_help >h2{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#containerSlider{
+    background-image: url(img/call-centers5.jpg);
+    width: 100%;
+   
+}
+
+#containerHome{
+    text-align: center;
+}
+
+body , main{
+ 
+    width: 100%;/*o lo necesario*/
+}
+
+.root{
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.root.left{
+    margin-right: 50px;
+}
+
+
+
+p.title{
+   font-family:  "Montserrat", sans-serif;
+   color:#334350;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-size: 20px;
+}
+
+#btnDescriptar, #btnEncriptar {
+    margin-top: 10px;
+}
+
+#containerHome > h3{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Raleway;
+    color: black;
+
+}
+/*SEGUNDA PAGINA EMCRIPTAR*/
+#containerEncrypt{
+    text-align: center;
+    width: 100%;
+    background-color: blue;
+}
+
+#message{
+    text-align: center;
+   /* margin:10px;*/
+    width: 640px;
+    background-color: blanchedalmond;
+}
+#formMessage{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+textarea{
+ width:50% ;
+}
+#labelmessage {
+    display: block;
+}
+
+
+footer{
+    background-color: black;
+}
+
+
+

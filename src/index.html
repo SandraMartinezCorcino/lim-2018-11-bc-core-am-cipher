@@ -6,9 +6,90 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>hola Mundo</h1>
-    </div>
+    
+    <header>
+      <div class="icon_help">  
+        <img src ="img/help32.png"></img>
+        <h2>HelpM@il!</h2>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="containerSlider">
+        <img src="img/call-centers5.jpg"></img>
+      </section>
+
+      <section id="containerHome">
+
+      <h3> Mensaje de Emergencia </h3>
+      
+      <div class="root left"> 
+        <img src="img/mail.png"></img>
+        <p class="title"> Enviar Alertas  </p>
+        <p class="content">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button id="btnEncriptar"> Encriptar </button>
+      </div>
+      
+      <div class="root rigth">
+        <img src="img/email.png"></img>
+        <p class="title"> Leer Alertas  </p>
+        <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         </p>
+        <button id="btnDescriptar"> Descriptar</button>
+      </div>
+
+      </section>
+
+      <section id="containerEncrypt">
+        <div id="message">
+            <h1>MENSAJE</h1>
+          <div id="formMessage">
+              <label>Nombre:</label>
+ 
+              <input
+                type="text"
+                id="name"
+                placeholder="name"
+              />
+
+              <label >Offset:</label>
+              <input
+                type="number"
+                id="offset"
+                placeholder="Offset"
+                
+              />
+              <label id="labelmessage">Encriptar Mensaje:</label>
+              <textarea id="messageEncode">
+              </textarea>
+              <br>
+              <button id="btnEncode">Encriptar</button>
+
+
+            </div>
+
+        </div>
+      </section>
+
+      <section id="containerDecrypt">
+        encrip
+      </section>
+
+ 
+
+
+    </main>
+    
+    <footer>
+      <p> Copright</p>
+    </footer>
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
