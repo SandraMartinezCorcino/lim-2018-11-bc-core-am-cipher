@@ -11,6 +11,8 @@ describe('cipher', () => {
     });
 
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offest 33');
+                          
+
   });
 
   describe('cipher.decode', () => {
@@ -20,6 +22,7 @@ describe('cipher', () => {
     });
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offest 33');
+                           
   });
 
   describe('cipher.createCipherWithOffset', () => {

@@ -2,79 +2,64 @@ window.cipher = {
 
  encode: function(offset, string){
 
-
-  
-          const positionAscii=[] ;
-
-          const codeAscci=[];
-
           const offset1=parseInt(offset);
-  
-          for (var i = 0; i < string.length ; i++) {
-            
-            codeAscci[i]=string.toUpperCase().charCodeAt(i);
+          
+          let mesajeFinally='';
 
-            if (codeAscci[i]==32) {
-              positionAscii[i]=' ';
+          for (let i = 0; i < string.length ; i++) {
+            const codeAscci = string.toUpperCase().charCodeAt(i);    
+            console.log(typeof(codeAscci) );
+
+            if (codeAscci===32 ) {
+              
+              mesajeFinally= mesajeFinally +' ';
+
             } else {
               
-              positionAscii[i] = String.fromCharCode((codeAscci[i]  - 65 + offset1) % 26 + 65) ;
+              mesajeFinally = mesajeFinally + String.fromCharCode(((codeAscci - 65 + offset1) % 26 )+ 65);
 
             }
-          
+           
+            console.log((codeAscci - 65 + offset1) % 26);
+            console.log(mesajeFinally );
           }
           
-          
-          return positionAscii.join('');
+          return mesajeFinally;
          
  },
 
  decode:function(offset, string){
 
-          const positionAscii=[] ;
+          const offsets=parseInt(offset);
 
-          const offset1=parseInt(offset);
+          const nuevoOffset =  offsets % 26;
+          
+          let mesajeFinally='';
 
-          const codeAscci=[];
+          for (let i = 0; i < string.length ; i++) {
 
+            const codeAscci = string.toUpperCase().charCodeAt(i);    
+          
 
-
-          for (var i = 0; i < string.length ; i++) {
-
-              codeAscci[i]=string.toUpperCase().charCodeAt(i);
-
-
-              if (codeAscci[i]==32) {
-
-                positionAscii[i]=' ';
+            if (codeAscci===32 ) {
               
-              } else {
-                console.log(offset1);
-                console.log(codeAscci[i]);
-                console.log(codeAscci[i]-65);
-                console.log(codeAscci[i]-65 -offset1 );
+              mesajeFinally= mesajeFinally +' ';
 
-                const conditionForm= Math.abs( codeAscci[i]-65 -offset1) ;
+            } else  
+            
+            {
+              mesajeFinally = mesajeFinally + String.fromCharCode((codeAscci + 65 - nuevoOffset) % 26 + 65);
 
-                console.log(conditionForm);
-
-                if (conditionForm <= 26 ) {
-                  
-                  positionAscii[i] = String.fromCharCode(  ( codeAscci[i]-65) - offset1  % 26 + 65) ;
-
-                } else  {
-                  positionAscii[i]= String.fromCharCode(  ( codeAscci[i]-65) - offset1  % 26 + 91 );
-                }
-
-
-               
-
-              }
+            }
+           
+            console.log(mesajeFinally );
           }
-  
-          return positionAscii.join('');
+          
+          return mesajeFinally;
   
 
- }
+ },
+
+    
 };
 //offset, string
