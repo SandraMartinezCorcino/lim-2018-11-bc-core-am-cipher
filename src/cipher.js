@@ -32,25 +32,31 @@ window.cipher = {
 
           const offsets=parseInt(offset);
 
-          const nuevoOffset =  offsets % 26;
+         // const nuevoOffset =  offsets % 26;
           
           let mesajeFinally='';
 
           for (let i = 0; i < string.length ; i++) {
 
-            const codeAscci = string.toUpperCase().charCodeAt(i);    
-          
-
-            if (codeAscci===32 ) {
-              
-              mesajeFinally= mesajeFinally +' ';
-
-            } else  
+            const codeAscci = string.toUpperCase().charCodeAt(i);   
             
-            {
-              mesajeFinally = mesajeFinally + String.fromCharCode((codeAscci + 65 - nuevoOffset) % 26 + 65);
+            const conditionForm=( (codeAscci - 65) - offset );
 
-            }
+            console.log('conditionForm'+conditionForm);
+          
+          if (conditionForm > 0 || (  conditionForm % 26) === 0 ) {
+
+               
+                  mesajeFinally = mesajeFinally + String.fromCharCode(( conditionForm % 26  ) + 65);
+
+                console.log('>=0');
+            
+          } else {
+            
+
+                    mesajeFinally=mesajeFinally + String.fromCharCode(( conditionForm % 26 + 26 ) + 65)
+                    console.log('<0');
+          }
            
             console.log(mesajeFinally );
           }
