@@ -7,8 +7,8 @@ const buttonDecrypt=document.getElementById('btnDescriptar');
 const sectionSidebar=document.getElementById('containerSlider');
 const sectionHome=document.getElementById('containerHome');
 
-const sectionEncrypt=document.getElementById('containerEncrypt');
-const sectionDecrypt=document.getElementById('containerDecrypt');
+const sectionEncrypt=document.getElementById('container-encode');
+const sectionDecrypt=document.getElementById('container-decode');
 
 //  --Hoja Encode--
 const buttonEncode=document.getElementById('btnEncode');

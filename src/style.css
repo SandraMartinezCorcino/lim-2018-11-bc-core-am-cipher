@@ -1,36 +1,56 @@
-*{
-    margin: 0px;
-    padding: 0px;
+body{
+    margin: 0;
+} 
+
+header, #containerSlider, #containerHome, #container-encode, #container-decode{
+    padding: 1em 2em;
 }
+
+#containerSlider, #containerHome, #container-encode, #container-decode, footer{
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+   
+}
+
+#containerSlider{
+    height: 300px;
+}
+
+#containerHome,#container-encode,#container-decode{
+    height: 520px;
+}
+
+#containerHome{
+    text-align: center;
+
+}
+
+#containerSlider{
+    padding: 0px;
+    background-image: url(img/call-centers5.jpg);
+    background-size: cover;
+}
+.root.left{
+    margin-right: 50px;
+}
+
 
 header{
     background-color: #252932;
     color: beige;
 }
 
-.icon_help{
-    padding: 10px;
-}
-
 .icon_help >h2{
     display: inline-block;
     vertical-align: top;
+    margin: 0;
 }
 
-#containerSlider{
-    background-image: url(img/call-centers5.jpg);
-    width: 100%;
-   
+footer{
+    background-color: black;
 }
 
-#containerHome{
-    text-align: center;
-}
-
-body , main{
- 
-    width: 100%;/*o lo necesario*/
-}
 
 .root{
     display: inline-block;
@@ -39,10 +59,6 @@ body , main{
     text-align: center;
     margin-bottom: 50px;
 }
-.root.left{
-    margin-right: 50px;
-}
-
 
 
 p.title{
@@ -58,48 +74,19 @@ p.title{
 }
 
 #containerHome > h3{
-    padding-top: 50px;
-    padding-bottom: 20px;
+
     text-align: center;
     font-size: 3rem;
     font-family: Raleway;
     color: black;
 
 }
-/*SEGUNDA PAGINA EMCRIPTAR*/
-#containerEncrypt{
-    text-align: center;
-    width: 100%;
-    background-color: blue;
+
+/* MEDIA QUERY */
+@media screen and (max-width:480px) {
+
+    header{
+        
+        text-align: center;
+    }
 }
-
-#message{
-    text-align: center;
-   /* margin:10px;*/
-    width: 640px;
-    background-color: blanchedalmond;
-}
-#formMessage{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    width: 100%;
-
-}
-
-
-
-textarea{
- width:50% ;
-}
-#labelmessage {
-    display: block;
-}
-
-
-footer{
-    background-color: black;
-}
-
-
-
