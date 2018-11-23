@@ -12,6 +12,9 @@ const sectionDecrypt=document.getElementById('container-decode');
 
 //  --Hoja Encode--
 const buttonEncode=document.getElementById('btnEncode');
+const messageResult=document.getElementById('message-result');
+
+const result480= document.getElementById('result-480'); 
 
 // -- Hoja Decode --
 
@@ -21,6 +24,7 @@ const buttonDecode=document.getElementById('btnDecode');
 
 sectionDecrypt.style.display='none';
 sectionEncrypt.style.display='none';
+messageResult.style.display='none';
 
 // -- Hoja Home --
 
@@ -29,6 +33,7 @@ buttonEncrypt.addEventListener( 'click',() => {
     sectionHome.style.display='none';
     sectionDecrypt.style.display='none';
     sectionEncrypt.style.display='block';
+   
 });
 buttonDecrypt.addEventListener('click',() => {
     sectionSidebar.style.display='none';
@@ -42,11 +47,18 @@ buttonDecrypt.addEventListener('click',() => {
 //buttonEncode.addEventListener('click',funEncode);
 
 
+result480.addEventListener('click',() => {
+    const message=document.getElementById('message');
+    message.style.display='block';
+    result480.style.display='none';
+});
+
 buttonEncode.addEventListener('click',() => {
     const offsetEncode=document.getElementById('offset').value;
     const messageEncode=document.getElementById('messageEncode').value;
     const messageResult=document.getElementById('message-result');
 
+    messageResult.style.display='block';
     messageResult.innerHTML=cipher.encode(offsetEncode,messageEncode);
 });
 

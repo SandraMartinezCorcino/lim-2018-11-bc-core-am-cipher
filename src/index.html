@@ -18,7 +18,7 @@
     <main>
 
       <section id="containerSlider">
-       
+          <img class="banner" > </img>
       </section>
 
       <section id="containerHome">
@@ -48,65 +48,138 @@
       </section>
 
       <section id="container-encode">
-        <div id="message">
-            <h1>MENSAJE</h1>
-          
-            <form id="formMessage">
-              <label>Nombre:</label>
- 
-              <input
-                type="text"
-                id="name"
-                placeholder="name"
-              />
-
-              <label >Offset:</label>
-              <input
-                type="number"
-                id="offset"
-                placeholder="Offset"
+          <aside id='result-480'>
+              <div class='group-icon' >
                 
-              />
-              <label id="labelmessage">Encriptar Mensaje:</label>
-              <textarea id="messageEncode"></textarea>
-              <br>
-              <button id="btnEncode" type="button">Encriptar</button>
+               <div class='firefighting'>
+                 <div>
+                  <img class="img-icon" src="img/police-car.png"></img>
+                </div>
+                <div>
+                  <p>POLICIA PNP</p>
+                </div>
+                </div>
+                
+                <div class='firefighting'>
+                    <div>
+                        <img class="img-icon" src="img/ambulance.png"></img>
+                      </div>
+                      <div>
+                        <p>ATENCIÓN MEDICA</p>
+                      </div>
+                </div>
+                
+                <div class='firefighting'>
+                    <div>
+                        <img class="img-icon" src="img/firefighting.png"></img>
+                      </div>
+                      <div>
+                        <p>BOMBEROS</p>
+                      </div>
+                </div>
 
+                <div class='firefighting'>
+                    <div>
+                        <img class="img-icon" src="img/alarm.png"></img>
+                      </div>
+                      <div>
+                        <p>TERREMOTO Y DESASTRES NATURALES</p>
+                      </div>
+                </div>
+            
+            </div>
+             
+          </aside>
+          <aside id='result'>
+              <div class='group-icon' >
+                
+               <div class='firefighting'>
+                 <div>
+                  <img class="img-icon" src="img/police-car.png"></img>
+                </div>
+                <div>
+                  <p>105</p>
+                </div>
+                </div>
+                
+                <div class='firefighting'>
+                    <div>
+                        <img class="img-icon" src="img/ambulance.png"></img>
+                      </div>
+                      <div>
+                        <p>106</p>
+                      </div>
+                </div>
+                
+                <div class='firefighting'>
+                    <div>
+                        <img class="img-icon" src="img/firefighting.png"></img>
+                      </div>
+                      <div>
+                        <p>116</p>
+                      </div>
+                </div>
 
-            </form>
+                <div class='firefighting'>
+                    <div>
+                        <img class="img-icon" src="img/alarm.png"></img>
+                      </div>
+                      <div>
+                        <p>119</p>
+                      </div>
+                </div>
+            
+            </div>
+             
+          </aside>
 
+          <div id="message"> 
+              
+              <div class="insert-message result">
+                      <p id='message-result'  ></p>
+              </div>          
+              
+              <div class="insert-message">
+                  <form id="formMessage">
+
+                           <!-- <label id="labelmessage" for="messageEncode">Encriptar Mensaje:</label>-->
+                           <input id="messageEncode" placeholder="Escribir mensaje..."></input>
+                           
+                           <!--- <label  for="offset">Offset:</label>-->
+                            <input type="number" id="offset" placeholder="Offset"/>                         
+                        
+                            
+                            <button id="btnEncode" type="button">CIFRAR</button>
+                  </form>
+            </div>
           </div>
 
-          <div id='result'>
-            <p id='message-result'></p>
-          </div>
+         
       </section>
 
       <section id="container-decode">
-        <h1>MENSAJE</h1>
+        
+         <div id="message-two">
+            <div class="insert-message result">
+                <p id='message-result-decode' ></p>
+           </div>  
 
-        <form id="formMessageDecode">
-         
-          <div>
-          <label for="offsetDecode" >Offset:</label>
-          <input type="number" id="offsetDecode" placeholder="Offset"/>
-          </div>
+           <div class="insert-message">
+          <form id="formMessageDecode">
+  
+          <input id="messageDecode"  placeholder="Escribir mensaje..."></input>
 
-          <div>
-          <label id="labelmessageDecode" for="messageDecode"> Encriptar Mensaje:</label>
-          <textarea id="messageDecode"></textarea>
-          </div>
-
-          <div>
-          <button id="btnDecode" type="button">Descifrar</button>
-          </div>
-
-
+          <input id="offsetDecode" type="number"  placeholder="Offset"/>
+     
+          <button id="btnDecode" type="button">DESCIFRAR</button>
+          
         </form>
-
-        <div id='resultDecode'>
-          <p id='message-result-decode'></p>
+          </div>
         </div>
+
+       <!-- <div id='resultDecode'>
+          <p id='message-result-decode'></p>
+        </div>-->
 
       </section>
 
