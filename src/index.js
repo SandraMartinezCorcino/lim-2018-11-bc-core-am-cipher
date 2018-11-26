@@ -4,7 +4,7 @@
 const buttonEncrypt=document.getElementById('btnEncriptar');
 const buttonDecrypt=document.getElementById('btnDescriptar');
 
-const sectionSidebar=document.getElementById('containerSlider');
+const sectionBanner=document.getElementById('container-banner');
 const sectionHome=document.getElementById('containerHome');
 
 const sectionEncrypt=document.getElementById('container-encode');
@@ -29,14 +29,14 @@ messageResult.style.display='none';
 // -- Hoja Home --
 
 buttonEncrypt.addEventListener( 'click',() => {
-    sectionSidebar.style.display='none' ;  
+    sectionBanner.style.display='none' ;  
     sectionHome.style.display='none';
     sectionDecrypt.style.display='none';
     sectionEncrypt.style.display='block';
    
 });
 buttonDecrypt.addEventListener('click',() => {
-    sectionSidebar.style.display='none';
+    sectionBanner.style.display='none';
     sectionHome.style.display='none';
     sectionEncrypt.style.display='none';
     sectionDecrypt.style.display='block';

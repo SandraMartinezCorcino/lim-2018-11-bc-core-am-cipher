@@ -9,41 +9,43 @@
   <body>
     
     <header>
-      <div class="icon_help">  
-        <img src ="img/help32.png"></img>
-        <h2>HelpM@il!</h2>
+      <div class="container">  
+        <img id='logo' src ="img/help32.png"></img>
+        <h2 id="title" >HelpM@il!</h2>
       </div>
     </header>
 
     <main>
 
-      <section id="containerSlider">
-          <img class="banner" > </img>
+      <section id="container-banner">
+          <img class="banner"> </img>
       </section>
 
       <section id="containerHome">
-
-      <h3> Mensaje de Emergencia </h3>
       
-      <div class="root left"> 
+      <h1> </h1>
+      
+      <div class="container">      
+        <div class="root left"> 
         <img src="img/mail.png"></img>
-        <p class="title"> Enviar Alertas  </p>
+        <h1 class="title"> Enviar Alertas  </h1>
         <p class="content">
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem Ipsum es simplemente un texto de relleno de la industria de impresión y tipografía. Lorem Ipsum ha sido
+             el texto de relleno estándar de la industria desde los años 1500
         </p>
         <button id="btnEncriptar"> Encriptar </button>
       </div>
       
       <div class="root rigth">
         <img src="img/email.png"></img>
-        <p class="title"> Leer Alertas  </p>
+        <h1 class="title"> Leer Alertas  </h1>
         <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem Ipsum es simplemente un texto de relleno de la industria de impresión y tipografía. Lorem Ipsum ha sido el texto
+            de relleno estándar de la industria desde los años 1500
          </p>
         <button id="btnDescriptar"> Descriptar</button>
       </div>
+    </div>
 
       </section>
 
@@ -189,7 +191,9 @@
     </main>
     
     <footer>
-      <p> Copright</p>
+      <div class="container">
+        <p id='text-footer'> HelpM@il! <span> © Copyright 2018. Todos los derechos reservados. </span> </p>
+      </div>
     </footer>
     
     <script src="cipher.js"></script>

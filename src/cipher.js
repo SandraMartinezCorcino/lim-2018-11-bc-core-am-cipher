@@ -68,4 +68,5 @@ window.cipher = {
 
     
 };
+
 //offset, string
