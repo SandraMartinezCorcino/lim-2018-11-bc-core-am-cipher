@@ -10,6 +10,7 @@ const sectionHome=document.getElementById('containerHome');
 const sectionEncrypt=document.getElementById('container-encode');
 const sectionDecrypt=document.getElementById('container-decode');
 
+const menuBar=document.getElementById('menu-bar');
 //  --Hoja Encode--
 const buttonEncode=document.getElementById('btnEncode');
 const messageResult=document.getElementById('message-result');
@@ -45,7 +46,16 @@ buttonDecrypt.addEventListener('click',() => {
 //  --Hoja Encode--
     
 //buttonEncode.addEventListener('click',funEncode);
-
+menuBar.addEventListener( 'click',() =>{
+    sectionHome.style.display='block';
+    sectionBanner.style.display='block';
+    if (sectionDecrypt.style.display==='block' ||  sectionEncrypt.style.display==='block') {
+        sectionDecrypt.style.display='none';
+        sectionEncrypt.style.display='none';
+    } 
+   
+   
+} );
 
 result480.addEventListener('click',() => {
     const message=document.getElementById('message');

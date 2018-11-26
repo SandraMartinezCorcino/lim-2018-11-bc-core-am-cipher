@@ -32,6 +32,7 @@ header{
     
 }
 
+
 main{
     background-color: #f3f3f3;
  
@@ -50,11 +51,22 @@ main{
     padding-top: 20px;
     font-size: 27px;
 }
+#menu-bar{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+
+}
 #logo{
   max-width: 100%;
  
     
 }
+
+
 
 section{
     width: 100%;
