@@ -28,7 +28,7 @@ header{
     left:0;
     background-color: #31333e;
     color: beige;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -49,10 +49,10 @@ main{
     display: inline-block;
     vertical-align: top;
     padding-top: 20px;
-    font-size: 27px;
+    font-size: 25px;
 }
 #menu-bar{
-    display: inline-block;
+    
     vertical-align: top;
     padding-top: 20px;
     float: right;
