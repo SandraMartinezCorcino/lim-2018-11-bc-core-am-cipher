@@ -8,7 +8,7 @@ window.cipher = {
 
           for (let i = 0; i < string.length ; i++) {
             const codeAscci = string.toUpperCase().charCodeAt(i);    
-            console.log(typeof(codeAscci) );
+           
 
             if (codeAscci===32 ) {
               
@@ -20,8 +20,6 @@ window.cipher = {
 
             }
            
-            console.log((codeAscci - 65 + offset1) % 26);
-            console.log(mesajeFinally );
           }
           
           return mesajeFinally;
@@ -30,9 +28,7 @@ window.cipher = {
 
  decode:function(offset, string){
 
-          const offsets=parseInt(offset);
-
-         // const nuevoOffset =  offsets % 26;
+          const offset1=parseInt(offset);
           
           let mesajeFinally='';
 
@@ -40,26 +36,26 @@ window.cipher = {
 
             const codeAscci = string.toUpperCase().charCodeAt(i);   
             
-            const conditionForm=( (codeAscci - 65) - offset );
-
-            console.log('conditionForm'+conditionForm);
-          
-          if (conditionForm > 0 || (  conditionForm % 26) === 0 ) {
-
-               
-                  mesajeFinally = mesajeFinally + String.fromCharCode(( conditionForm % 26  ) + 65);
-
-                console.log('>=0');
-            
-          } else {
-            
-
-                    mesajeFinally=mesajeFinally + String.fromCharCode(( conditionForm % 26 + 26 ) + 65)
-                    console.log('<0');
-          }
+            const conditionForm=( (codeAscci - 65) - offset1 );
            
-            console.log(mesajeFinally );
-          }
+                  if (codeAscci==32) {
+
+                    mesajeFinally=  mesajeFinally + ' ';
+                  
+                  } else {
+                    
+                      if (conditionForm > 0 || (  conditionForm % 26) === 0 ) {
+
+                          mesajeFinally = mesajeFinally + String.fromCharCode(( conditionForm % 26  ) + 65);
+                          
+                        } else {
+                
+                          mesajeFinally=mesajeFinally + String.fromCharCode(( conditionForm % 26 + 26 ) + 65)
+                      }
+                  
+                    }
+                  
+              }
           
           return mesajeFinally;
   
