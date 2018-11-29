@@ -31,21 +31,27 @@
         <div class="root left"> 
         <img src="img/mail.png">
         <h1 class="title"> Enviar Alertas  </h1>
-        <p class="content">
-            Lorem Ipsum es simplemente un texto de relleno de la industria de impresión y tipografía. Lorem Ipsum ha sido
-             el texto de relleno estándar de la industria desde los años 1500
-        </p>
-        <button id="btnEncriptar"> Encriptar </button>
+
+        <ul>
+                <li>Introduce el mensaje en el área de texto blanca de la pantalla.</li>
+                <li>Introduce el desplazamiento  en el campo desplazamiento.</li>
+                <li>Pulsar el botón CIFRAR.</li>
+         </ul>
+        
+        <button id="btnEncriptar"> CIFRAR </button>
       </div>
       
       <div class="root rigth">
         <img src="img/email.png">
         <h1 class="title"> Leer Alertas  </h1>
         <p class="content">
-            Lorem Ipsum es simplemente un texto de relleno de la industria de impresión y tipografía. Lorem Ipsum ha sido el texto
-            de relleno estándar de la industria desde los años 1500
+            <ul>
+              <li>Introduce el mensaje en el área de texto blanca de la pantalla.</li>
+              <li>Introduce el desplazamiento  en el campo desplazamiento.</li>
+              <li>Pulsar el botón DESCIFRAR.</li>
+            </ul>
          </p>
-        <button id="btnDescriptar"> Descriptar</button>
+        <button id="btnDescriptar"> DESCIFRAR</button>
       </div>
     </div>
 
@@ -138,8 +144,11 @@
           </aside>
 
           <div id="message"> 
+
+             
               
               <div class="insert-message result">
+                  <p>MENSAJE CIFRADO:</p>
                       <p id="message-result"  ></p>
               </div>          
               
@@ -147,10 +156,10 @@
                   <form id="formMessage">
 
                            <!-- <label id="labelmessage" for="messageEncode">Encriptar Mensaje:</label>-->
-                           <input id="messageEncode" placeholder="Escribir mensaje...">
+                           <input id="messageEncode" placeholder="Ingresar el Mensaje a Cifrar...">
                            
                            <!--- <label  for="offset">Offset:</label>-->
-                            <input type="number" id="offset" placeholder="Offset"/>                         
+                            <input type="number" id="offset" placeholder="Desplazamiento"/>                         
                         
                             
                             <button id="btnEncode" type="button">CIFRAR</button>
@@ -165,15 +174,16 @@
         
          <div id="message-two">
             <div class="insert-message result">
+                <p>MENSAJE REAL:</p>
                 <p id="message-result-decode" ></p>
            </div>  
 
            <div class="insert-message">
           <form id="formMessageDecode">
   
-          <input id="messageDecode"  placeholder="Escribir mensaje...">
+          <input id="messageDecode"  placeholder="Ingresar el Mensaje Cifrado...">
 
-          <input id="offsetDecode" type="number"  placeholder="Offset"/>
+          <input id="offsetDecode" type="number"  placeholder="Desplazamiento"/>
      
           <button id="btnDecode" type="button">DESCIFRAR</button>
           

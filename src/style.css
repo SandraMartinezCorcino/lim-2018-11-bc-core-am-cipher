@@ -136,6 +136,19 @@ section #containerHome{
     cursor: pointer;
 }
 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li{
+position: relative;
+padding: 0.75em 1.875em 0.75em 0;
+border-bottom: 1px solid #dfe3e8;
+text-align: left;
+}
 
 footer{
  
@@ -185,6 +198,7 @@ footer{
     background-color: #474f70;
     padding: 20px;
     margin: 20px;
+    color: #f4f4f4;
     
 }
 .insert-message.result{
@@ -261,7 +275,7 @@ input {
 @media screen  and (min-width:480px) and (max-width:780px) {
 .root{
         width: 100%;
-        padding: 10px;
+        padding: 50px;
         margin-bottom: 50px;
     
 }
@@ -284,14 +298,12 @@ footer{
 
 @media screen and (min-width:780px) and (max-width:1024px){
     .root{
-        width: 30%;
-        height: 334px;
-        padding: 20px;
+        width: 100%;
+        height: 380px;
+        padding-left: 50px ;
+        padding-right: 50px;
     }
-    .root.rigth{
-        margin-left: 20%;
-        
-    }
+   
 
     .root >#btnEncriptar , .root>#btnDescriptar{
     
@@ -311,7 +323,20 @@ footer{
         display:none;
        
     }
+   
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+   }
 
+   li{
+    position: relative;
+    padding: 0.75em 1.875em 0.75em 0;
+    border-bottom: 1px solid #dfe3e8;
+    text-align: left;
+   }
     #result{
         display:block;
         float: left;
@@ -344,9 +369,9 @@ footer{
 @media screen and (min-width:1024px) and (max-width:1316px) { 
 
     .root{
-        width: 25%;
-        height: 350px;
-        padding: 20px;
+        width: 40%;
+        height: 480px;
+       
     }
     
     .root.rigth{
@@ -403,11 +428,11 @@ footer{
     }
     #offset,#offsetDecode{
 
-        width: 12%
+        width: 19%
     }
     
     #messageEncode , #messageDecode{
-        width: 77%
+        width: 70%
     }
     
     #btnEncode , #btnDecode{
@@ -427,7 +452,7 @@ footer{
 
     .root{
         width: 25%;
-        height: 300px;
+        height: 450px;
         padding: 20px;
     }
     .root >#btnEncriptar , .root>#btnDescriptar{
@@ -478,11 +503,11 @@ footer{
     }
     #offset,#offsetDecode{
 
-        width: 12%
+        width: 19%
     }
     
     #messageEncode , #messageDecode{
-        width: 77%
+        width: 70%
     }
     
     #btnEncode , #btnDecode{
@@ -503,7 +528,7 @@ footer{
 
     .root{
         width: 25%;
-        height: 300px;
+        height: 420px;
         padding: 20px;
     }
     
