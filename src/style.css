@@ -268,6 +268,17 @@ input {
     vertical-align: top;
     
     }
+    #title-icon{
+        color: #f5f5dc;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+      .group-icon h3{
+        color: #fffdd9;
+        margin-bottom: 5px; 
+      }
+
+
 
 /**MEDIAQUERY **/
 
