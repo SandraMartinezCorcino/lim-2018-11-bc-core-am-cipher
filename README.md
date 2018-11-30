@@ -38,14 +38,15 @@ Al hacer click en el botón DESCIFRAR, el usuario podrá escribir el mensaje que
 
 Finalmente, el usuario deberá pulsar el botón DESCIFRAR para decodificar el mensaje.
 
-#Definición del Producto
+## Definición del Producto
+
 La aplicación va dirigida a usuarios que se ecuentran en una situación de emergencia, como por ejemplo:Secuestro, extorción, etc.
 
 El objetivo principal es que el usuario pueda enviar un mensaje oculto que no sea entendido por ningún posible atacante.
 
 Los usuarios tendran acceso rápido a los números de emergencia y de esta forma podran  enviar un mensaje de auxilio.
 
-#Diseño del Producto
+## Diseño del Producto
 Actualmente el Perú esta viviendo una época de altos indices de criminalidad. Es por eso necesario contar con una aplicación con la que las víctimas puedan enviar mensajes de ayuda, teniendo la seguridad que sus mensajes no serán descubiertos por sus atacantes. 
 
 Teniendo en cuenta la situación actual, donde sucede un gran número de feminicidios, la aplicación ah sido pensada principalmente para mujeres. Es por ello que para el diseño de la aplicación se utilizaron colores como el rosado, morado , naranja y amarillo, siendo su logo de color rosado. 
