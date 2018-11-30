@@ -147,7 +147,7 @@ li{
 position: relative;
 padding: 0.75em 1.875em 0.75em 0;
 border-bottom: 1px solid #dfe3e8;
-text-align: left;
+text-align: center;
 }
 
 footer{
@@ -171,15 +171,15 @@ footer{
 
 
 #container-encode,#container-decode,#message,#result-480,aside{
-    height: 630px;
+    height: 200vh;
     margin: 0px;
  }
  .group-icon{
-    padding: 10px;
+    padding-bottom: 90px;
 }
 
 .firefighting{
-    margin: 20px;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 
@@ -211,6 +211,17 @@ footer{
     padding: 20px;
     margin: 20px;
     color: #31333e
+}
+.instructions{
+    border-radius: 12px;
+    background-color: #fffdd9;
+    padding: 20px;
+    margin: 20px;
+    color: #31333e
+}
+.instructions .title-instructions{
+    text-decoration: underline;
+    text-align: center;
 }
 #message{
     display: none;
@@ -270,12 +281,15 @@ input {
     }
     #title-icon{
         color: #f5f5dc;
-        margin-bottom: 5px;
+        margin-bottom: 25px;
         text-decoration: underline;
+        padding-top: 50px;
     }
       .group-icon h3{
         color: #fffdd9;
         margin-bottom: 5px; 
+        padding-bottom: 30px;
+
       }
 
 
@@ -313,6 +327,11 @@ footer{
         height: 380px;
         padding-left: 50px ;
         padding-right: 50px;
+    }
+
+    #container-encode, #container-decode, #message, #result-480, aside {
+        height: 200vh;
+       
     }
    
 
@@ -421,7 +440,7 @@ footer{
     }
     #result{
         float: left;
-        width:10%;
+        width:20%;
         background-color:#607d8b;
         text-align: center;
     }
@@ -433,7 +452,7 @@ footer{
     #message{
         display: block;
         float: left;
-        width: 90%;
+        width: 80%;
         background-color: #ecf7fe;
         color: #f4f4f4;
     }

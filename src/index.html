@@ -33,10 +33,11 @@
         <h1 class="title"> Enviar Alertas  </h1>
 
         <ul>
-                <li>Introduce el mensaje en el área de texto blanca de la pantalla.</li>
-                <li>Introduce el desplazamiento  en el campo desplazamiento.</li>
-                <li>Pulsar el botón CIFRAR.</li>
-         </ul>
+          <li>Si deseas enviar un Mensaje de Auxilio en forma secreta.</li>
+          
+          <li>Pulsar el botón CIFRAR.</li>
+        </ul>
+
         
         <button id="btnEncriptar"> CIFRAR </button>
       </div>
@@ -45,11 +46,12 @@
         <img src="img/email.png">
         <h1 class="title"> Leer Alertas  </h1>
         <p class="content">
-            <ul>
-              <li>Introduce el mensaje en el área de texto blanca de la pantalla.</li>
-              <li>Introduce el desplazamiento  en el campo desplazamiento.</li>
-              <li>Pulsar el botón DESCIFRAR.</li>
-            </ul>
+          <ul>
+            <li>Si deseas decodificar un Mensaje de Auxilio.</li>
+            
+            <li>Pulsar el botón DESCIFRAR.</li>
+          </ul>
+
          </p>
         <button id="btnDescriptar"> DESCIFRAR</button>
       </div>
@@ -67,7 +69,7 @@
                   <img class="img-icon" src="img/police-car.png">
                 </div>
                 <div>
-                  <p>POLICIA PNP</p>
+                  <p>POLICIA </p>
                 </div>
                 </div>
                 
@@ -76,7 +78,7 @@
                         <img class="img-icon" src="img/ambulance.png">
                       </div>
                       <div>
-                        <p>ATENCIÓN MEDICA</p>
+                        <p>AMBULANCIA</p>
                       </div>
                 </div>
                 
@@ -94,7 +96,7 @@
                         <img class="img-icon" src="img/alarm.png">
                       </div>
                       <div>
-                        <p>TERREMOTO Y DESASTRES NATURALES</p>
+                        <p>EMERGENCIAS</p>
                       </div>
                 </div>
             
@@ -109,7 +111,7 @@
                   <img class="img-icon" src="img/police-car.png">
                 </div>
                 <div>
-                  <p>105</p>
+                  <p>Policia</p>
                 </div>
                 </div>
                 
@@ -118,7 +120,7 @@
                         <img class="img-icon" src="img/ambulance.png">
                       </div>
                       <div>
-                        <p>106</p>
+                        <p>Ambulancia</p>
                       </div>
                 </div>
                 
@@ -127,7 +129,7 @@
                         <img class="img-icon" src="img/firefighting.png">
                       </div>
                       <div>
-                        <p>116</p>
+                        <p>Bomberos</p>
                       </div>
                 </div>
 
@@ -136,7 +138,7 @@
                         <img class="img-icon" src="img/alarm.png">
                       </div>
                       <div>
-                        <p>119</p>
+                        <p>Emergencias</p>
                       </div>
                 </div>
             
@@ -146,7 +148,14 @@
 
           <div id="message"> 
 
-             
+            <div class="instructions"> 
+             <p class="title-instructions">INSTRUCCIONES</p>
+              <ul >
+                <li>Introduce el mensaje en el área de texto blanca de la pantalla.</li>
+                <li>Introduce un número entero positivo en el campo desplazamiento.</li>
+                <li>Pulsar el botón CIFRAR.</li>
+              </ul>
+           </div>
               
               <div class="insert-message result">
                   <p>MENSAJE CIFRADO:</p>
@@ -174,6 +183,17 @@
       <section id="container-decode">
         
          <div id="message-two">
+
+          
+            <div class="instructions"> 
+                <p class="title-instructions">INSTRUCCIONES</p>
+                 <ul >
+                   <li>Introduce el mensaje cifrado en el área de texto blanca de la pantalla.</li>
+                   <li>Introduce un número entero positivo en el campo desplazamiento.</li>
+                   <li>Pulsar el botón DESCIFRAR.</li>
+                 </ul>
+              </div>
+
             <div class="insert-message result">
                 <p>MENSAJE REAL:</p>
                 <p id="message-result-decode" ></p>
