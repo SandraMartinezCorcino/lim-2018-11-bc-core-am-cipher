@@ -106,6 +106,7 @@ section #containerHome{
 .root{
     width: 100%;
     padding: 10px;
+  
     margin-bottom: 50px;
 }
 .root.left , .root.rigth{
@@ -279,7 +280,7 @@ input {
     vertical-align: top;
     
     }
-    .title-icon{
+    .group-icon h1{
         color: #f5f5dc;
         margin-bottom: 25px;
         text-decoration: underline;
@@ -300,7 +301,7 @@ input {
 @media screen  and (min-width:480px) and (max-width:780px) {
 .root{
         width: 100%;
-        padding: 50px;
+       
         margin-bottom: 50px;
     
 }
@@ -324,7 +325,7 @@ footer{
 @media screen and (min-width:780px) and (max-width:1024px){
     .root{
         width: 100%;
-        height: 380px;
+      
         padding-left: 50px ;
         padding-right: 50px;
     }
@@ -400,7 +401,7 @@ footer{
 
     .root{
         width: 40%;
-        height: 480px;
+        
        
     }
     
@@ -482,7 +483,7 @@ footer{
 
     .root{
         width: 25%;
-        height: 450px;
+      
         padding: 20px;
     }
     .root >#btnEncriptar , .root>#btnDescriptar{
@@ -558,7 +559,7 @@ footer{
 
     .root{
         width: 25%;
-        height: 420px;
+        
         padding: 20px;
     }
     
