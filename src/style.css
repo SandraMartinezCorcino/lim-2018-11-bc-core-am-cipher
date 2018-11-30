@@ -279,7 +279,7 @@ input {
     vertical-align: top;
     
     }
-    #title-icon{
+    .title-icon{
         color: #f5f5dc;
         margin-bottom: 25px;
         text-decoration: underline;
