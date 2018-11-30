@@ -1,6 +1,8 @@
 # INTRODUCCION
 La criptografía proviene de una de las ramas de las matemáticas, la cual utiliza métodos y técnicas para ocultar el contenido de un mensaje.
+
 Un método criptográfico simple es el cifrado Cesar, el cual pertenece a la época de la criptografía clásica. En la época de la criptografía clásica se utilizaba la técnica de sustitución de caracteres, para poder realizar los algoritmos de cifrado. El algoritmo de cifrado Cesar utiliza la técnica de sustitución, está técnica, consiste en reemplazar unos símbolos por otros, permitiendo añadir confusión al mensaje cifrado y evita mantener una relación entre el texto original y el texto cifrado.
+
 La aplicación realizada utiliza el cifrado Cesar para enviar mensajes codificados ante una situación de emergencia.
 
 # Cifrado César
