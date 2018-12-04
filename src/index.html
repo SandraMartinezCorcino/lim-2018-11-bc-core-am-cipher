@@ -1,235 +1,177 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fonts/style.css">
-  </head>
-  <body>
-    
-    <header>
-      <div class="container">  
-        <img id="logo" src ="img/help32.png"><h2 id="title" >HelpM@il!</h2>
-       
-       <p id="menu-bar"> <span class="icon-home"> </span>Inicio</p>
-      </div>
-    </header>
-
-    <main>
-
-      <section id="container-banner">
-          <img class="banner"> 
-      </section>
-
-      <section id="containerHome">
-      
-      <h1> </h1>
-      
-      <div class="container">      
-        <div class="root left"> 
-        <img src="img/mail.png">
-        <h1 class="title"> Enviar Alertas  </h1>
-
-        <ul>
-          <li>Si deseas enviar un Mensaje de Auxilio en forma secreta.</li>
-          
-          <li>Pulsar el botón CIFRAR.</li>
-        </ul>
-
-        
-        <button id="btnEncriptar"> CIFRAR </button>
-      </div>
-      
-      <div class="root rigth">
-        <img src="img/email.png">
-        <h1 class="title"> Leer Alertas  </h1>
-        <p class="content">
-          <ul>
-            <li>Si deseas decodificar un Mensaje de Auxilio.</li>
-            
-            <li>Pulsar el botón DESCIFRAR.</li>
-          </ul>
-
-         </p>
-        <button id="btnDescriptar"> DESCIFRAR</button>
-      </div>
-    </div>
-
-      </section>
-
-      <section id="container-encode">
-          <aside id="result-480">
-              <div class="group-icon" >
-                <h1 id="title-icon">AGENDA DE EMERGENCIA</h1>
-                <h3>Selecciona un contacto y comunícate </h3>
-               <div class="firefighting">
-                 <div>
-                  <img class="img-icon" src="img/police-car.png">
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Caesar Cipher</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="fonts/style.css" />
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <img id="logo" src ="img/help32.png" alt="logo" />
+            <h2 id="title" >HelpM@il!</h2>
+            <p id="menu_bar"> <span class="icon_home"> </span>Inicio</p>
+         </div>
+      </header>
+      <main>
+         <section id="container_banner">
+            <img class="banner"  alt="banner" src="img/slide1-min.png" /> 
+         </section>
+         <section id="container_home">
+           <h2>ESCOGUE ALGUNA DE LAS OPCIONES</h2>
+            <div class="container">
+               <div class="root left">
+                  <img src="img/mail.png" alt="send_the_email" />
+                  <h1 class="title"> Enviar Alertas  </h1>
+                  <ul>
+                     <li>Si deseas enviar un Mensaje de Auxilio en forma secreta.</li>
+                     <li>Pulsar el botón CIFRAR.</li>
+                  </ul>
+                  <button id="btn_encriptar"> CIFRAR </button>
+               </div>
+               <div class="root rigth">
+                  <img src="img/email.png" alt="read_the_email "/>
+                  <h1 class="title"> Leer Alertas  </h1>
+                  <div class="content">
+                  <ul>
+                     <li>Si deseas decodificar un Mensaje de Auxilio.</li>
+                     <li>Pulsar el botón DESCIFRAR.</li>
+                  </ul>
                 </div>
-                <div>
-                  <p>POLICIA </p>
-                </div>
-                </div>
-                
-                <div class="firefighting">
-                    <div>
-                        <img class="img-icon" src="img/ambulance.png">
-                      </div>
-                      <div>
+                  <button id="btn_descriptar"> DESCIFRAR</button>
+               </div>
+            </div>
+         </section>
+         <section id="container_encode">
+            <aside id="result_480">
+               <div class="group_icon" >
+                  <h1 id="title_icon">AGENDA DE EMERGENCIA</h1>
+                  <h3>Selecciona un contacto y comunícate </h3>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/police-car.png" alt="telephone_of_police "/>
+                     </div>
+                     <div>
+                        <p>POLICIA </p>
+                     </div>
+                  </div>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/ambulance.png" alt="telephone_of_ambulance" />
+                     </div>
+                     <div>
                         <p>AMBULANCIA</p>
-                      </div>
-                </div>
-                
-                <div class="firefighting">
-                    <div>
-                        <img class="img-icon" src="img/firefighting.png">
-                      </div>
-                      <div>
+                     </div>
+                  </div>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/firefighting.png" alt="telephone_of_firefightings" />
+                     </div>
+                     <div>
                         <p>BOMBEROS</p>
-                      </div>
-                </div>
-
-                <div class="firefighting">
-                    <div>
-                        <img class="img-icon" src="img/alarm.png">
-                      </div>
-                      <div>
+                     </div>
+                  </div>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/alarm.png" alt="telephone_of_emergency" />
+                     </div>
+                     <div>
                         <p>EMERGENCIAS</p>
-                      </div>
-                </div>
-            
-            </div>
-             
-          </aside>
-          <aside id="result">
-              <div class="group-icon">
-                <h1 >AGENDA</h1>
-               <div class="firefighting">
-                 <div>
-                  <img class="img-icon" src="img/police-car.png">
-                </div>
-                <div>
-                  <p>Policia</p>
-                </div>
-                </div>
-                
-                <div class="firefighting">
-                    <div>
-                        <img class="img-icon" src="img/ambulance.png">
-                      </div>
-                      <div>
+                     </div>
+                  </div>
+               </div>
+            </aside>
+            <aside id="result">
+               <div class="group_icon">
+                  <h1 >AGENDA</h1>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/police-car.png" alt="telephone_of_police" />
+                     </div>
+                     <div>
+                        <p>Policia</p>
+                     </div>
+                  </div>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/ambulance.png" alt="telephone_of_ambulance" />
+                     </div>
+                     <div>
                         <p>Ambulancia</p>
-                      </div>
-                </div>
-                
-                <div class="firefighting">
-                    <div>
-                        <img class="img-icon" src="img/firefighting.png">
-                      </div>
-                      <div>
+                     </div>
+                  </div>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/firefighting.png" alt="telephone_of_firefightings" />
+                     </div>
+                     <div>
                         <p>Bomberos</p>
-                      </div>
-                </div>
-
-                <div class="firefighting">
-                    <div>
-                        <img class="img-icon" src="img/alarm.png">
-                      </div>
-                      <div>
+                     </div>
+                  </div>
+                  <div class="firefighting">
+                     <div>
+                        <img class="img_icon" src="img/alarm.png"  alt="telephone_of_emergency" />
+                     </div>
+                     <div>
                         <p>Emergencias</p>
-                      </div>
-                </div>
-            
-            </div>
-             
-          </aside>
-
-          <div id="message"> 
-
-            <div class="instructions"> 
-             <p class="title-instructions">INSTRUCCIONES</p>
-              <ul >
-                <li>Introduce el mensaje en el área de texto blanca de la pantalla.</li>
-                <li>Introduce un número entero positivo en el campo desplazamiento.</li>
-                <li>Pulsar el botón CIFRAR.</li>
-              </ul>
-           </div>
-              
-              <div class="insert-message result">
+                     </div>
+                  </div>
+               </div>
+            </aside>
+            <div id="message">
+               <div class="instructions">
+                  <p class="title_instructions">INSTRUCCIONES</p>
+                  <ul >
+                     <li>Introduce el mensaje en el área de texto blanca de la pantalla.</li>
+                     <li>Introduce un número entero positivo en el campo desplazamiento.</li>
+                     <li>Pulsar el botón CIFRAR.</li>
+                  </ul>
+               </div>
+               <div class="insert_message result">
                   <p>MENSAJE CIFRADO:</p>
-                      <p id="message-result"  ></p>
-              </div>          
-              
-              <div class="insert-message">
-                  <form id="formMessage">
-
-                           <!-- <label id="labelmessage" for="messageEncode">Encriptar Mensaje:</label>-->
-                           <input id="messageEncode" placeholder="Ingresar el Mensaje a Cifrar...">
-                           
-                           <!--- <label  for="offset">Offset:</label>-->
-                            <input type="number" id="offset" placeholder="Desplazamiento"/>                         
-                        
-                            
-                            <button id="btnEncode" type="button">CIFRAR</button>
+                  <p id="message_result"  ></p>
+               </div>
+               <div class="insert_message">
+                  <form id="form_message">
+                     <input id="message_encode" placeholder="Ingresar el Mensaje a Cifrar..."/>
+                     <input type="number" id="offset" placeholder="Desplazamiento"/>                         
+                     <button id="btn_encode" type="button">CIFRAR</button>
                   </form>
+               </div>
             </div>
-          </div>
-
-         
-      </section>
-
-      <section id="container-decode">
-        
-         <div id="message-two">
-
-          
-            <div class="instructions"> 
-                <p class="title-instructions">INSTRUCCIONES</p>
-                 <ul >
-                   <li>Introduce el mensaje cifrado en el área de texto blanca de la pantalla.</li>
-                   <li>Introduce un número entero positivo en el campo desplazamiento.</li>
-                   <li>Pulsar el botón DESCIFRAR.</li>
-                 </ul>
-              </div>
-
-            <div class="insert-message result">
-                <p>MENSAJE REAL:</p>
-                <p id="message-result-decode" ></p>
-           </div>  
-
-           <div class="insert-message">
-          <form id="formMessageDecode">
-  
-          <input id="messageDecode"  placeholder="Ingresar el Mensaje Cifrado...">
-
-          <input id="offsetDecode" type="number"  placeholder="Desplazamiento"/>
-     
-          <button id="btnDecode" type="button">DESCIFRAR</button>
-          
-        </form>
-          </div>
-        </div>
-
-       <!-- <div id='resultDecode'>
-          <p id='message-result-decode'></p>
-        </div>-->
-
-      </section>
-
- 
-
-
-    </main>
-    
-    <footer>
-      <div class="container">
-        <p id="text-footer"> HelpM@il! <span> © Copyright 2018. Todos los derechos reservados. </span> </p>
-      </div>
-    </footer>
-    
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+         </section>
+         <section id="container_decode">
+            <div id="message_two">
+               <div class="instructions">
+                  <p class="title_instructions">INSTRUCCIONES</p>
+                  <ul >
+                     <li>Introduce el mensaje cifrado en el área de texto blanca de la pantalla.</li>
+                     <li>Introduce un número entero positivo en el campo desplazamiento.</li>
+                     <li>Pulsar el botón DESCIFRAR.</li>
+                  </ul>
+               </div>
+               <div class="insert_message result">
+                  <p>MENSAJE REAL:</p>
+                  <p id="message_result_decode" ></p>
+               </div>
+               <div class="insert_message">
+                  <form id="form_message_decode">
+                     <input id="message_decode"  placeholder="Ingresar el Mensaje Cifrado..."/>
+                     <input id="offset_decode" type="number"  placeholder="Desplazamiento"/>
+                     <button id="btn_decode" type="button">DESCIFRAR</button>
+                  </form>
+               </div>
+            </div>
+        </section>
+      </main>
+      <footer>
+         <div class="container">
+            <p id="text_footer"> HelpM@il! <span> © Copyright 2018. Todos los derechos reservados. </span> </p>
+         </div>
+      </footer>
+      <script src="cipher.js"></script>
+      <script src="index.js"></script>
+   </body>
 </html>

@@ -51,7 +51,7 @@ main{
     padding-top: 20px;
     font-size: 25px;
 }
-#menu-bar{
+#menu_bar{
     
     vertical-align: top;
     padding-top: 20px;
@@ -73,14 +73,13 @@ section{
     margin-bottom: 50px;
 }
 
-section #containerHome{
+section #container_home{
     margin-bottom: 0px;
 }
 
 /**** BANNER *****************/
 
 .banner{
-    content: url('img/slide1-min.png');
      max-width: 100%;
      height: auto;
 
@@ -89,15 +88,15 @@ section #containerHome{
 
 /******* HOME **********************/
 
-#containerHome h3{
+#container_home h3{
     margin-bottom: 25px;
 
 }
-#containerHome{
+#container_home{
     text-align: center;
 }
 
-#containerHome .container{
+#container_home .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -125,7 +124,7 @@ section #containerHome{
     color: #888888;
     line-height: 1.5em;
 }
-.root >#btnEncriptar , .root>#btnDescriptar{
+.root >#btn_encriptar , .root>#btn_descriptar{
     color: #fff;
     background-color: #62A29E;
     font-family: 'Roboto Condensed', sans-serif;
@@ -160,18 +159,18 @@ footer{
     text-align: center;
 }
 
-#text-footer{
+#text_footer{
     color: #f69323;
     padding-top: 10px
 }
-#text-footer>span{
+#text_footer>span{
     color:white;
     
 }
 
 
 
-#container-encode,#container-decode,#message,#result-480,aside{
+#container_encode,#container_decode,#message,#result_480,aside{
     height: 200vh;
     margin: 0px;
  }
@@ -190,11 +189,11 @@ footer{
     margin: 4px;
 }
 
-#btnEncode, #offset , #messageEncode, #btnDecode, #offsetDecode , #messageDecode{
+#btn_encode, #offset , #message_ncode, #btn_decode, #offset_decode , #message_decode{
     width: 100%;
 }
 
-.insert-message{
+.insert_message{
     border-radius: 5px;
     background-color: #474f70;
     padding: 20px;
@@ -202,11 +201,11 @@ footer{
     color: #f4f4f4;
     
 }
-.insert-message.result{
+.insert_message.result{
     height: 350px;
 }
 
-#message-result{
+#message_result{
     border-radius: 12px;
     background-color: #fffdd9;
     padding: 20px;
@@ -220,7 +219,7 @@ footer{
     margin: 20px;
     color: #31333e
 }
-.instructions .title-instructions{
+.instructions .title_instructions{
     text-decoration: underline;
     text-align: center;
 }
@@ -232,7 +231,7 @@ footer{
     display: none;
 
 }
-#result-480{
+#result_480{
     width: 100%;
     display:block;
     background-color:#607d8b;
@@ -240,14 +239,14 @@ footer{
 
 }
 
-#messageEncode {
+#message_encode {
     width: 100%;
 }
-#messageDecode{
+#message_decode{
     width: 100%
 }
 
-#message-two{
+#message_two{
     float: left;
     width: 100%;
   
@@ -255,7 +254,7 @@ footer{
 }
 
 
-#btnEncode , #btnDecode{
+#btn_encode , #btn_decode{
     width: 100%;
     margin: 8px 0;
     padding: 12px 2px;
@@ -267,7 +266,7 @@ footer{
     
 }
 
-#btnEncode:hover, #btnDecode:hover{
+#btn_encode:hover, #btn_decode:hover{
     background-color: #334350;
 }
 
@@ -280,13 +279,13 @@ input {
     vertical-align: top;
     
     }
-    .group-icon h1{
+    .group_icon h1{
         color: #f5f5dc;
         margin-bottom: 25px;
         text-decoration: underline;
         padding-top: 50px;
     }
-      .group-icon h3{
+      .group_icon h3{
         color: #fffdd9;
         margin-bottom: 5px; 
         padding-bottom: 30px;
@@ -306,7 +305,7 @@ input {
     
 }
 
-.root >#btnEncriptar , .root>#btnDescriptar{
+.root >#btn_encriptar , .root>#btn_descriptar{
     
     margin-top: 20px;
 }
@@ -330,13 +329,13 @@ footer{
         padding-right: 50px;
     }
 
-    #container-encode, #container-decode, #message, #result-480, aside {
+    #container_encode, #container_decode, #message, #result_480, aside {
         height: 200vh;
        
     }
    
 
-    .root >#btnEncriptar , .root>#btnDescriptar{
+    .root >#btn_encriptar , .root>#btn_descriptar{
     
         margin-top: 20px;
     }
@@ -349,7 +348,7 @@ footer{
     footer{
         text-align: left;
     }
-    #result-480{
+    #result_480{
       
         display:none;
        
@@ -391,7 +390,7 @@ footer{
         margin: 10px;
         padding-top: 20px;
     }
-    .group-icon{
+    .group_icon{
         padding-top: 45px;
     }
 
@@ -409,7 +408,7 @@ footer{
         margin-left: 20%;
         
     }
-    .root >#btnEncriptar , .root>#btnDescriptar{
+    .root >#btn_encriptar , .root>#btn_descriptar{
     
         margin-top: 50px;
     }
@@ -428,7 +427,7 @@ footer{
         text-align: left;
     }
 
-    #result-480{
+    #result_480{
       
         display:none;
        
@@ -457,16 +456,16 @@ footer{
         background-color: #ecf7fe;
         color: #f4f4f4;
     }
-    #offset,#offsetDecode{
+    #offset,#offset_decode{
 
         width: 19%
     }
     
-    #messageEncode , #messageDecode{
+    #message_encode , #message_decode{
         width: 70%
     }
     
-    #btnEncode , #btnDecode{
+    #btn_encode , #btn_decode{
         width: 10%;
         margin: 8px 0;
         padding: 12px 2px;
@@ -486,7 +485,7 @@ footer{
       
         padding: 20px;
     }
-    .root >#btnEncriptar , .root>#btnDescriptar{
+    .root >#btn_encriptar , .root>#btn_descriptar{
     
         margin-top: 40px;
     }
@@ -504,7 +503,7 @@ footer{
         text-align: left;
     }
 
-    #result-480{
+    #result_480{
       
         display:none;
        
@@ -532,16 +531,16 @@ footer{
         background-color: #ecf7fe;
         color: #f4f4f4;
     }
-    #offset,#offsetDecode{
+    #offset,#offset_decode{
 
         width: 19%
     }
     
-    #messageEncode , #messageDecode{
+    #message_encode , #message_decode{
         width: 70%
     }
     
-    #btnEncode , #btnDecode{
+    #btn_encode , #btn_decode{
         width: 10%;
         margin: 8px 0;
         padding: 12px 2px;
@@ -567,7 +566,7 @@ footer{
         margin-left: 20%;
         
     }
-    .root >#btnEncriptar , .root>#btnDescriptar{
+    .root >#btn_encriptar , .root>#btn_descriptar{
     
         margin-top: 30px;
     }
@@ -584,7 +583,7 @@ footer{
     footer{
         text-align: left;
     }
-    #result-480{
+    #result_480{
       
         display:none;
        
@@ -613,16 +612,16 @@ footer{
         background-color: #ecf7fe;
         color: #f4f4f4;
     }
-    #offset,#offsetDecode{
+    #offset,#offset_decode{
 
-        width: 12%
+        width: 12%e
     }
     
-    #messageEncode , #messageDecode{
+    #message_encode , #message_decode{
         width: 77%
     }
     
-    #btnEncode , #btnDecode{
+    #btn_encode , #btn_decode{
         width: 10%;
         margin: 8px 0;
         padding: 12px 2px;

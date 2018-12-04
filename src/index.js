@@ -1,25 +1,25 @@
 //==================================================================
 //SELECCIONAR ELEMENTO DEL DOM
 // -- Hoja Home --
-const buttonEncrypt=document.getElementById('btnEncriptar');
-const buttonDecrypt=document.getElementById('btnDescriptar');
+const buttonEncrypt=document.getElementById('btn_encriptar');
+const buttonDecrypt=document.getElementById('btn_descriptar');
 
-const sectionBanner=document.getElementById('container-banner');
-const sectionHome=document.getElementById('containerHome');
+const sectionBanner=document.getElementById('container_banner');
+const sectionHome=document.getElementById('container_home');
 
-const sectionEncrypt=document.getElementById('container-encode');
-const sectionDecrypt=document.getElementById('container-decode');
+const sectionEncrypt=document.getElementById('container_encode');
+const sectionDecrypt=document.getElementById('container_decode');
 
-const menuBar=document.getElementById('menu-bar');
+const menuBar=document.getElementById('menu_bar');
 //  --Hoja Encode--
-const buttonEncode=document.getElementById('btnEncode');
-const messageResult=document.getElementById('message-result');
+const buttonEncode=document.getElementById('btn_encode');
+const messageResult=document.getElementById('message_result');
 
-const result480= document.getElementById('result-480'); 
+const result480= document.getElementById('result_480'); 
 
 // -- Hoja Decode --
 
-const buttonDecode=document.getElementById('btnDecode');
+const buttonDecode=document.getElementById('btn_decode');
 //==================================================================
 ///ASOCIAR EL EVENTO A ESE ELEMENTO
 
@@ -65,8 +65,8 @@ result480.addEventListener('click',() => {
 
 buttonEncode.addEventListener('click',() => {
     const offsetEncode=document.getElementById('offset').value;
-    const messageEncode=document.getElementById('messageEncode').value;
-    const messageResult=document.getElementById('message-result');
+    const messageEncode=document.getElementById('message_encode').value;
+    const messageResult=document.getElementById('message_result');
 
     messageResult.style.display='block';
     messageResult.innerHTML=cipher.encode(offsetEncode,messageEncode);
@@ -76,9 +76,9 @@ buttonEncode.addEventListener('click',() => {
 
 buttonDecode.addEventListener('click',() => {
     
-    const offsetDecode=document.getElementById('offsetDecode').value;
-    const messageDecode = document.getElementById('messageDecode').value;
-    const messageResultDecode=document.getElementById('message-result-decode');
+    const offsetDecode=document.getElementById('offset_decode').value;
+    const messageDecode = document.getElementById('message_decode').value;
+    const messageResultDecode=document.getElementById('message_result_decode');
     messageResultDecode.innerHTML=cipher.decode(offsetDecode,messageDecode);
 } );
 
