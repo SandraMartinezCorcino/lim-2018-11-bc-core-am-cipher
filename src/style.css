@@ -170,7 +170,7 @@ footer{
 
 
 
-#container_encode,#container_decode,#message,#result_480,aside{
+#container_encode,#container_decode,#message,#emergency_agenda_cell,aside{
     height: 200vh;
     margin: 0px;
  }
@@ -227,11 +227,11 @@ footer{
     display: none;
 }
 
-#result{
+#emergency_agenda_pc{
     display: none;
 
 }
-#result_480{
+#emergency_agenda_cell{
     width: 100%;
     display:block;
     background-color:#607d8b;
@@ -330,7 +330,7 @@ footer{
         padding-right: 50px;
     }
 
-    #container_encode, #container_decode, #message, #result_480, aside {
+    #container_encode, #container_decode, #message, #emergency_agenda_cell, aside {
         height: 200vh;
        
     }
@@ -349,7 +349,7 @@ footer{
     footer{
         text-align: left;
     }
-    #result_480{
+    #emergency_agenda_cell{
       
         display:none;
        
@@ -368,7 +368,7 @@ footer{
     border-bottom: 1px solid #dfe3e8;
     text-align: left;
    }
-    #result{
+    #emergency_agenda_pc{
         display:block;
         float: left;
         width:20%;
@@ -428,18 +428,18 @@ footer{
         text-align: left;
     }
 
-    #result_480{
+    #emergency_agenda_cell{
       
         display:none;
        
     }
 
-    #result{
+    #emergency_agenda_pc{
       
         display:block;
        
     }
-    #result{
+    #emergency_agenda_pc{
         float: left;
         width:20%;
         background-color:#607d8b;
@@ -504,18 +504,18 @@ footer{
         text-align: left;
     }
 
-    #result_480{
+    #emergency_agenda_cell{
       
         display:none;
        
     }
-    #result{
+    #emergency_agenda_pc{
       
         display:block;
        
     }
 
-    #result{
+    #emergency_agenda_pc{
         float: left;
         width:10%;
         background-color:#607d8b;
@@ -584,18 +584,18 @@ footer{
     footer{
         text-align: left;
     }
-    #result_480{
+    #emergency_agenda_cell{
       
         display:none;
        
     }
 
-    #result{
+    #emergency_agenda_pc{
       
         display:block;
        
     }
-    #result{
+    #emergency_agenda_pc{
         float: left;
         width:10%;
         background-color:#607d8b;
