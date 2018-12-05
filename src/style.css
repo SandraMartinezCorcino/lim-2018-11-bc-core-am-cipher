@@ -14,7 +14,7 @@ body{
     background-color: #f3f3f3;
 }
 
-h1 , h2, h3{
+h1 , h2, h3 {
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -279,11 +279,12 @@ input {
     vertical-align: top;
     
     }
-    .group_icon h1{
+    .group_icon .title_icon{
         color: #f5f5dc;
         margin-bottom: 25px;
         text-decoration: underline;
         padding-top: 50px;
+        font-size: 20px;
     }
       .group_icon h3{
         color: #fffdd9;
